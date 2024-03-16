@@ -31,7 +31,74 @@ Neste case trazemos o Fabricio Buzeto, que é doutor em computação, CEO e CTO 
 Fabricio nos conta como foi o processo de evolução de um monolito para um sistema distribuído, explicando desde a tomada de decisão, erros e acertos, até os resultados que conseguiram a partir disso.
 
 ---
-* 
+* A BXBlue começou como monolito e foi aplicando sistemas distribuídos através de arquitetura em cloud.
+
+---
+![image](https://github.com/AndreCoutinhom/distributed_systems_case/assets/91290799/027850b7-48c7-4b44-b739-e407117452a1)
+
+* As features foram aos poucos implementadas aproveitando o que já havia sido construído. Ainda há componentes do sistema que permanecem os mesmos.
+
+---
+![image](https://github.com/AndreCoutinhom/distributed_systems_case/assets/91290799/e7e5156b-d3b3-4758-be11-7c1c90117210)
+
+* O processamento que se tornou mais pesado, fez com que a BXBlue alterasse seu desenvolvimento com funções assíncronas de cálculo. Então o Rails já não rodava todos os cálculos sozinho.
+
+---
+### Vantagens de se usar um monolito
+
+* Simples de desenvolver;
+* Simples para testar;
+* Simples de lançar;
+* Simples de reutilizar;
+* Simples de escalar (só não se sabe até onde).
+
+---
+### Dificuldades de se usar um monolito
+
+* Escala de testes;
+* Escala de times;
+* Escala de deploy;
+* Escala de stack;
+* Escala de mudanças.
+
+---
+![image](https://github.com/AndreCoutinhom/distributed_systems_case/assets/91290799/bc1970cc-d839-4e52-8d6e-f0f60f9acfb0)
+
+* O mapeamento de bases carentes de automação está fortemente ligado às possíveis irregularidades de performance monolítica por vários programadores. No geral, são formas de deixar os times mais adeptos a dados coesos e performance fluida.
+
+---
+![image](https://github.com/AndreCoutinhom/distributed_systems_case/assets/91290799/9a42c24e-ba3b-4274-b593-ed7b9490d48e)
+
+* A BXBlue usou várias ferramentas próprias do framework Rails.
+
+---
+* Quando muitas responsabilidades são atribuídas a um monolito, isso pode se tornar um problema.
+
+---
+### Fatores comuns de influência para mudança (BXBlue)
+
+* Tempo de build;
+* Tempo de deploy;
+* Número de acessos;
+* Contexto do time;
+* Rastreabilidade.
+
+---
+### Outras formas de sistema distribuído
+
+* Micro-serviços;
+* Citadel;
+* Macroserviços;
+* **Stonehenge**.
+
+---
+![image](https://github.com/AndreCoutinhom/distributed_systems_case/assets/91290799/ac381c1b-9239-4509-8193-2d592457d75e)
+
+* O Stonehenge basicamente integra vários monolitos. A BXBlue percebeu que apesar de não usar muitos microsserviços, os monolitos eram bastante auto contidos.
+
+![image](https://github.com/AndreCoutinhom/distributed_systems_case/assets/91290799/c7f29a53-c0cf-4ce2-9169-5f621133f1c8)
+
+* Por isso, as novas necessidades foram acomodadas em pequenos monolitos.
 
 ---
 ## Materiais para Estudo
